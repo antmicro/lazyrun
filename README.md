@@ -16,6 +16,7 @@ You also need to add the `apps/` directory to your path.
 
 * [X] sbt PoC
 * [ ] turn sbt into a more sensible container (no weird paths)
-* [ ] move from scripts to config
+* [X] move from scripts to config
+* [ ] include static podman in releases
 * [ ] ability to turn apps on or off
 * [ ] overlays over default list - or list of lists
