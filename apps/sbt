@@ -1,0 +1,1 @@
+podman run -it -v $PWD:/home/chisel ucbbar/chisel3-tools sbt $@
