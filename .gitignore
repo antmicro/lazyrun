@@ -1,3 +1,8 @@
 *.pyc
-apps/
-config.yml
+.lazyrun.yml
+.lazyrun/
+dist/
+build/
+__pycache__
+
+lazyrun
