@@ -2,7 +2,7 @@
 
 Lazyrun is a utility to run various useful tools in containers as if they were installed natively.
 
-## Installation & setup.
+## Installation
 
 To get lazyrun, for now just clone this repository:
 
@@ -16,22 +16,30 @@ Unfortunately the official [static build docs don't work](https://podman.io/gett
 But you can get Podman as a static binary e.g. [from its official CI](https://cirrus-ci.com/task/5125306349518848) or the releases, so you can do for example:
 
 ```
-cd lazyrun/apps/
+cd lazyrun
+mkdir -p .lazyrun && cd .lazyrun
 wget https://github.com/antmicro/lazyrun/releases/download/0.1/podman
 chmod +x podman
 ```
 
-You also need to add the `apps/` directory to your path:
+## Running lazyrun
+
+Just do:
 
 ```
-export PATH=`pwd`:$PATH
+lazyrun
 ```
+
+And follow the guidelines - if you have podman, you will need to:
+
+```
+source ./lazyrun/init
+```
+
+And you should now see the relevant binaries on your PATH.
 
 ## TODO
 
-* [X] sbt PoC
 * [ ] turn sbt into a more sensible container (no weird paths)
-* [X] move from scripts to config
-* [X] include static podman in releases
-* [ ] ability to turn apps on or off
-* [ ] overlays over default list - or list of lists
+* [ ] dsceribe building static binary and usage thereof
+* [ ] investigate simpler path changing solution
