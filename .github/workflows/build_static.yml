@@ -13,7 +13,8 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt update -y
-          sudo apt install -y python pyinstaller staticx
+          sudo apt install -y python
+          pip install --user pyinstaller staticx
 
       - name: Build
         run: |
