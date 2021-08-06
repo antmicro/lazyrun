@@ -29,16 +29,7 @@ folder = '.lazyrun'
 if not os.path.exists(folder):
     os.makedirs(folder)
 
-podman_bin = 'https://github.com/antmicro/lazyrun/releases/download/0.1/podman'
-
-podman_warning = f"""No podman found. Execute:
-
-cd {os.getcwd()}/{folder}
-sudo wget {podman_bin}
-sudo chmod a+x podman
-cd -
-
-To get it."""
+podman_warning = f"""No podman found. See https://podman.io/getting-started/installation for installation instructions"""
 
 if shutil.which('podman') is None:
     print(podman_warning)
