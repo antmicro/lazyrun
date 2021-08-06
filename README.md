@@ -49,4 +49,4 @@ And follow the guidelines - you will need to:
 source ./lazyrun/init
 ```
 
-And you should now see the relevant dockerized binaries on your PATH.
+And you should now see the relevant containerized binaries on your PATH.
