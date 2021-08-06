@@ -15,6 +15,8 @@ See [the official Podman docs](https://podman.io/getting-started/installation) f
 
 Basically, lazyrun itself will tell you if you don't have Podman and how to get it in that case.
 
+TODO: our own fully static container tech.
+
 ### Building a static binary
 
 Run:
