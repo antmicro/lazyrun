@@ -50,11 +50,3 @@ source ./lazyrun/init
 ```
 
 And you should now see the relevant dockerized binaries on your PATH.
-
-## TODO
-
-* [X] create CI which produces static binaries
-* [ ] add KiCad and Blender as examples
-* [ ] turn sbt into a more sensible container (no weird paths)
-* [X] describe building static binary and usage thereof
-* [ ] investigate simpler path changing solution
