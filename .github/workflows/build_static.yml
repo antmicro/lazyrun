@@ -1,6 +1,7 @@
 name: Build a static lazyrun package
 on:
   push:
+  workflow_dispatch:
 
 jobs:
   test:
