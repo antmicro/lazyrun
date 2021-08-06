@@ -1,0 +1,26 @@
+name: Build a static lazyrun package
+on:
+  push:
+
+jobs:
+  test:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: |
+          sudo apt update -y
+          sudo apt install -y python pyinstaller staticx
+
+      - name: Build
+        run: |
+          ./build.sh
+
+      - name: Save binary
+        uses: actions/upload-artifact@v2
+        if: always()
+        with:
+          path: |
+            lazyrun
